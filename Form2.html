@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<!-- saved from url=(0035)http://127.0.0.1:5500/assesment.htm -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Form</title>
+    <style>
+        div input {
+            padding: 4px;
+            border-radius: 4px;
+            padding-right: 140px;
+            margin: 5px;
+            width: 130px;
+        }
+
+        * {
+
+        }
+
+        body {
+            background-color: rgb(211, 196, 196);
+        }
+
+        div {
+            display: inline;
+
+        }
+
+        .inp {
+            padding: 0px;
+            /*border:2px solid powderblue;*/
+            border-redios: 2px;
+        }
+
+        .i {
+            margin-left: 100px;
+
+        }
+
+        .ii {
+            margin-left: 101.5px;
+
+        }
+
+        .iii {
+            margin-left: 127px;
+
+        }
+
+        .iv {
+            margin-left: 132px;
+            /*position:relative ;
+                left:5px;
+                top:-30px;*/
+                
+        }
+
+        .v {
+            margin-left: 60px;
+
+        }
+
+        .vi {
+            margin-left: 95px;
+        }
+
+        .vii {
+            margin-left: 137px;
+        }
+
+        .viii {
+            margin-left: 149px;
+        }
+
+        .ix {
+            margin-left: 122px;
+        }
+
+        .x {
+            margin-left: 143px;
+        }
+
+        .xi {
+            margin-left: 95px;
+        }
+
+        .xii {
+            margin-left: 23px;
+        }
+
+        .xiii {
+            margin-left: 112px;
+        }
+
+        .container {
+            margin-bottom: 5px;
+            margin-left: 6px;
+        }
+        /* .d {
+            margin-left: 500px;
+            border: 1px solid red;
+        } */
+        button {
+            background-color: green;
+            border-radius: 3px;
+            padding: 4px;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Sudent Regestration Form</h2>
+    <div class="container">
+        <div>First Name:</div>
+        <div class="i"><input placeholder="Enter your first name" type="text" size="5"></div>
+    </div><br>
+
+    <div class="container"></div>
+    <div>Last Name:</div>
+    <div class="ii"><input placeholder="Enter your last name" type="text" size="5"></div><br>
+
+    <div class="container"></div>
+    <div>E-mail:</div>
+    <div class="iii"><input placeholder="It shud be @." type="email" size="5"></div><br>
+
+    <div class="container"></div>
+    <div>Mobil:</div>
+    <div class="iv"><input #="" placeholder="only 10 digits allow" type="number"></div><br>
+
+    <div class="container"></div>
+    <div>Gender:</div>
+    <div class="v"><input id="male" name="gender" type="radio" size="5">male
+
+        <input id="female" name="gender" type="radio">female
+    </div><br>
+    <div>Date of birth:</div>
+    <div class="vi">
+        <div class="inp"><input placeholder="only 10 digits allow" type="date"></div>
+    </div><br>
+    <div>Adress:</div>
+    <div class="vii">
+        <div class="inp"><textarea size="5"></textarea></div><br>
+    </div>
+
+
+    <div>City:</div>
+    <div class="viii"><input placeholder="Your city name" size="5" type="text">
+    </div><br>
+    <div>Aria pin:</div>
+    <div class="ix"><input placeholder="" type="number" size="5"></div><br>
+
+    <div>State:</div>
+    <div class="x"><input placeholder="Your state name" type="text" size="5"></div><br>
+
+    <div>Qualification:</div>
+    <div class="xi"><select placeholder="abc" id="abc" name="abc">
+            <option>Select your Qualification</option>
+            <option>B.A</option>
+            <option>B.com</option>
+            <option>B.Sc</option>
+        </select></div><br>
+
+    <div>Specialization:</div>
+    <div class="xii"><input type="checkbox">Computer Since<br></div>
+    <div class="d"><div class="align"><input type="checkbox">Information Technology</div><br>
+        <div class="d"><input type="checkbox">computer arcitekcher</div><br>
+            <div class="d"><input type="checkbox">Tele Comunication</div>
+    <br>
+
+    <div>Password:</div>
+    <div class="xiii"><input type="password">
+    </div><br>
+    <button valu="ragistered">ragistered</button>
+
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+
+</div></body></html>
