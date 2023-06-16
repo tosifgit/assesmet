@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link rel="stylesheet" href="gt.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        box-sizing: border-box;
+      }
+      .navbar{
+        /* height: 100px; */
+        width: 100%;
+        height: 100%;
+        color:wheat;
+      }
+      span img {
+        position: relative;
+        bottom: 6px;
+      }
+      div marquee {
+        position: relative;
+        left: 5px;
+        width: 400px;
+        border-left: 1px solid black;
+      }
+
+      div span {
+        position: relative;
+        left: 60px;
+      }
+      .left {
+        
+        display: flex;
+        position: relative;
+        right: 200px;
+      }
+
+      #gt-logo {
+        position: relative;
+        bottom: 130px;
+        left: 43%;
+        height: 200px;
+        width: 200px;
+      }
+      .bg-body-tertiary {
+        height: 50px;
+        background-color:0b1c32;
+      }
+      .home a{
+        color: wheat;
+        /* background-color: rgba(76, 104, 156, 0.841); */
+      }
+      /* .carousel-item{
+        height: 500px !important;
+      } */
+    </style>
+</head>
+  <body>
+    <nav class="navbar bg-dark border-bottom border-bottom-dark" data-bs-theme="dark">
+  <div><span><img src="arrow-up-right.svg" alt="sf"><marquee behavior="" direction=""><li>Vikram Solanki and Sai Sudharsan reflect on a terrific TATA IPL 2023 campaign</li></marquee></span></div>
+
+  <div class="left"><span><img class="" src="search.svg" alt="sf"><span>Login</span></span></div>
+</nav>
+
+<nav class="navbar bg-body-tertiary">
+  <div class="container">
+    <!-- <img src="house.svg" alt=""><img src="newspaper.svg" alt=""><img src="Controller.svg" alt=""><img src="bag.svg" alt=""> -->
+    <!-- Example single danger button -->
+    <span class="home"><a href="http://127.0.0.1:5500/tops_gt/GUJRAT_TITANS.HTML#" id="home">home</a></span>
+<div class="btn-group">
+  <button type="button" class="btn btn-tertiary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+    More
+  </button>
+  <ul class="dropdown-menu" >
+    <li><a class="dropdown-item" href="#">squad</a></li>
+    <li><hr class="dropdown-divider"></li>
+    <li><a class="dropdown-item" href="#">standings</a></li>
+    <li><hr class="dropdown-divider"></li>
+    <li><a class="dropdown-item" href="#">Fixtuers</a></li>
+    <li><hr class="dropdown-divider"></li>
+    <li><a class="dropdown-item" href="#">Separated link</a></li>
+  </ul>
+</div>
+  </div>
+  
+</nav>
+<div class="dropdown-menu p-4 text-body-secondary" style="max-width: 200px;">
+  <p>
+    Some example text that's free-flowing within the dropdown menu.
+  </p>
+  <p class="mb-0">
+    And this is more example text.
+  </p>
+</div>
+<!-- <div id="gt-logo div"><img id="gt-logo" src="627d09228a632ca996477e87.png" alt=""></div> -->
+<!-- fgnbjfnbjb -->
+
+  
+<div id="carouselExample" class="carousel slide">
+  <div class="carousel-inner p-0 m-0">
+    <div class="row d-flex justify-content-center">
+      <div class="col-md-12">
+        <div class="carousel-item active ">
+          <img src="https://images.pexels.com/photos/36717/amazing-animal-beautiful-beautifull.jpg?auto=compress&cs=tinysrgb&w=600" class="d-block w-100 mx-auto" style="height: 80vh;" alt="...">
+        </div>
+      </div>  
+      <div class="col-md-12">
+        <div class="carousel-item ">
+          <img src="https://images.pexels.com/photos/36717/amazing-animal-beautiful-beautifull.jpg?auto=compress&cs=tinysrgb&w=600" class="d-block w-100 mx-auto" style="height: 80vh;" alt="...">
+        </div>
+      </div>
+      <div class="col-md-12">
+        <div class="carousel-item ">
+          <img src="https://images.pexels.com/photos/36717/amazing-animal-beautiful-beautifull.jpg?auto=compress&cs=tinysrgb&w=600" class="d-block w-100 mx-auto" style="height: 80vh;" alt="...">
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+  </body>
+</html>
