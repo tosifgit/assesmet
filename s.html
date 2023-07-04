@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Page Title</title>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <link rel="stylesheet" href="s.css">
+    </head>
+    <body>
+
+<div class="container">
+    <div class="title">password chaker</div>
+
+<input type="text" placeholder="Enter your password here..." >
+
+<div class="indicate">
+    <span class="low"></span>
+    <span class="medium"></span>
+    <span class="high"></span>
+</div>
+<p>password status</p>
+
+</div>
+<script>
+$(() => {
+    var number = /([0-9])/;
+    var alphabets = /([a-zA-Z])/;
+    var special_charecter = /([@,#,$,&,+,-,*,/])/
+
+    $('input').keyup(()=> {
+        var countText = $('input').val().length;
+        console.log(countText);
+        if (countText > 0 && countText < 20) {
+            $('span1').addClass('low')
+            $('p').html('poor password')
+        } else {
+            $('span1').removeClass('low')
+        }
+
+        if ($('input').val().match(number) && $('input').val().match(special_charecter) ){
+            $('.span2').addClass('medium')
+            $('p').html('MEDIUM password')
+
+        } else {
+            $('span1').removeClass('low')
+        }
+        
+        if ($('input').val().match(number) && $('input').val().match(special_charecter) && $('input').val().match(alphabets)) {
+            $('.span3').addClass('high')
+            $('p').html('HIGH password')
+
+        } else {
+            $('span1').removeClass('low')
+        }
+    })
+})
+</script>
+<!-- <script>
+    $(() => {
+    var number = /([0-9])/;
+    var alphabets = /([a-zA-Z])/;
+    var special_charecter = /([@,#,$,&,+,-,*,/])/
+    
+    $('input').keyup(()=>{
+        var countText = $('input').val().length;
+        console.log(countText);
+        if (countText >0 && countText <20){
+            $('span1').addClass('low');
+            $('p').html('poor password');
+        }else {
+            $('span1').removeClass('low');
+        }
+        
+        if ($('input').val().match(number) && $('input').val().match(alphabets) ){
+            $('.span2').addClass('medium');
+        }
+            else {
+                $('.span2').addClass('medium');
+                $('p').html('medium password');
+        }
+
+        if ($('input').val().match(number) && $('input').val().match(alphabets) && $('input').val().match(special_charecter) ){
+            $('.span3').addClass('hard');
+        }
+            else {
+                $('.span2').addClass('medium');
+                $('p').html('medium password');
+        }
+    })
+            
+        })
+
+</script> -->
+    </body>
+</html>
